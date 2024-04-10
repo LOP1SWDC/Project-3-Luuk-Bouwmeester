@@ -15,7 +15,39 @@
     <?php include "../php_shared/header.php"; ?>
 
     <main>
+        <section class="review_text">
+            <h1>Welkom bij de reviews!</h1>
+            <p>Hier vindt je wat mensen vinden over onze restaurant.</p>
+        </section>
 
+        <?php
+            $reviews = array(
+                array(
+                    "naam" => "Naam",
+                    "beschrijving" => "Beschrijving",
+                    "rating" => "5"
+                ),
+                array(
+                    "naam" => "Naam",
+                    "beschrijving" => "Beschrijving",
+                    "rating" => "5"
+                ),
+                array(
+                    "naam" => "Naam",
+                    "beschrijving" => "Beschrijving",
+                    "rating" => "5"
+                )
+            );
+
+            foreach ($reviews as $review) {
+                echo '<section class="geplaatste_review">';
+                echo '<h1>' . $review['naam'] . '</h1>';
+                echo '<p>' . $review['beschrijving'] . '</p>';
+                echo '<p>Rating: ' . $review['rating'] . '</p>';
+                echo '</section>';
+            }
+
+        ?>
     </main>
 
     <?php include "../php_shared/footer.php"; ?>
