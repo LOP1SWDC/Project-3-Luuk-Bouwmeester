@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf8">
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <meta name="description" content="Gallerij pagina van restaurant Hot dasi Handi">
+    <meta name="description" content="Menu pagina van restaurant Hot dasi Handi">
     <meta name="author" content="L. Bouwmeester">
     <meta name="keywords" content="">
-    <title>Hot Dasi Handi - Gallerij</title>
+    <title>Hot Dasi Handi - Menu</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
