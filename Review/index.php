@@ -30,20 +30,49 @@
                 array(
                     "naam" => "Naam",
                     "beschrijving" => "Beschrijving",
-                    "rating" => "5"
+                    "rating" => "4"
                 ),
                 array(
                     "naam" => "Naam",
                     "beschrijving" => "Beschrijving",
-                    "rating" => "5"
+                    "rating" => "3"
                 )
             );
 
+            // Functie om i.p.v. nummers omtezetten naar sterren.
+            function genereerSterRating($rating, $totaalSterren) {
+                // Dit zijn de AASCI-Symolen die we gaan gebruiken.
+                $ingevuldeSter = "★";
+                $legeSter = "☆";
+            
+                // De string is eerst leeg, deze gaan we vullen met sterren.
+                $return = "";
+
+                // Loop door maximale sterren die we kunnen hebben.
+                for ($i = 1; $i <= $totaalSterren; $i++) {
+                    // Als we onder de rating zijn (dus rating = 3, dan is tot 3 dit true), vullen we een ingevulde ster doe.
+                    if ($i <= $rating) {
+                        $return .= $ingevuldeSter;
+
+                    // Zo niet, moeten we een lege ster toevoegen.
+                    } else {
+                        $return .= $legeSter;
+                    }
+                }
+            
+                // Return de sterren.
+                return $return;
+            }
+            
+            // Maak dit als een constant zodat het makkelijker leesbaar is waar de 5 voor is.
+            $MAXIMALE_RATING = 5;
+
+            // Loop door elke review.
             foreach ($reviews as $review) {
                 echo '<section class="geplaatste_review">';
                 echo '<h1>' . $review['naam'] . '</h1>';
                 echo '<p>' . $review['beschrijving'] . '</p>';
-                echo '<p>Rating: ' . $review['rating'] . '</p>';
+                echo '<p>Rating: ' . genereerSterRating($review['rating'], $MAXIMALE_RATING) . '</p>';
                 echo '</section>';
             }
 
