@@ -1,0 +1,715 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Bevan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* style voor groter dan 480px (desktop) */
+@media screen and (min-width: 481px ) {
+    /* header styles */
+    header {
+        background-color: rgb(207, 50, 38);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    section.header_info > img {
+        width: 50%;
+    }
+
+    section.header_info > h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 24px;
+    }
+
+    /* header navigatie styles */
+    nav.header_navigatie {
+        display: flex;
+        font-family: "Bevan", open-sans;
+        background-color: rgb(239, 51, 64);
+        margin-right: 10px;
+    }
+
+    nav.header_navigatie > a {
+        font-size: 24px;
+        text-decoration: none;
+        padding: 1vh 1vw;
+    }
+
+    nav.header_navigatie > a:link, a:visited, a:active {
+        color: whitesmoke;
+    }
+
+    nav.header_navigatie > a:hover {
+        color: black;
+    }
+
+    #toggle_navigatie, #toggle_navigatie + label {
+        display: none;
+    }
+    
+    /* footer styles */
+    footer {
+        background-color: rgb(207, 50, 38);
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.footer_main > h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    section.footer_main > p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    section.footer_main > p > a {
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    #email_footer {
+        color: rgb(199, 199, 199);
+    }
+
+    #copyright_footer {
+        color: rgb(255, 240, 192);
+    }
+
+    /* home styles */
+    section.home_slideshow > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.home_text {
+        display: flex;
+        margin: 50px;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+    }
+
+    section.home_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+    }
+
+    section.home_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    /* gallerij styles */
+    section.gallerij_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.gallerij_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.gallerij_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.gallerij_afbeeldingen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.gallerij_afbeelding {
+        display: flex;
+        background-color: #f0f0f0;
+        justify-content: space-between;
+    }
+
+    section.gallerij_afbeelding img {
+        width: 32%;
+        margin: 10px;
+    }
+
+    /* menu styles */
+    section.menu_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.menu_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.menu_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.menu_gerechten {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.menu_gerecht {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    section.menu_gerecht h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.menu_gerecht p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
+
+    /* over ons styles */
+    section.over_ons_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.over_ons_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.over_ons_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.over_ons_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    section.over_ons_section_tekst {
+        margin-left: 10px;
+        flex: 1;
+        background-color: #f0f0f0;
+    }
+
+    section.over_ons_section_tekst h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 48px;
+    }
+    
+    section.over_ons_section_tekst p {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+    }
+
+    .over_ons_section_img {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    section.over_ons_text_alineas {
+        display: flex;
+        margin: 50px;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+    }
+
+    section.over_ons_text_alineas h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+    }
+
+    section.over_ons_text_alineas p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    section.over_ons_video {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.over_ons_video h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    /* reserveer styles */
+    section.avg_main {
+        justify-content: center;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 42px;
+        color: rgb(207, 50, 38);
+    }
+
+    section.avg_content {
+        color: black;
+        background-color: #f0f0f0;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    section.avg_main section.avg_content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #toggle_avg:checked ~ section.avg_content {
+        max-height: 500vh;
+        opacity: 1;
+    }
+
+    #toggle_avg {
+        display: none;
+    }
+
+    /* form styles */
+    form.formulier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 25px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    form.formulier h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 32px;
+    }
+
+    form.formulier p {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    form.formulier label {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form.formulier input[type="text"], form.formulier input[type="email"],  form.formulier input[type="date"], form.formulier input[type="tel"], form.formulier input[type="number"], form.formulier select, form.formulier textarea  {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    form.formulier input[type="submit"] {
+        background-color:  rgb(207, 50, 38);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    form.formulier input[type="submit"]:hover {
+        background-color:  rgb(239, 51, 64);
+    }
+}
+
+/* style voor onder 480px (mobile) */
+@media screen and (max-width: 480px ) {
+    /* header styles */
+    header {
+        background-color: rgb(207, 50, 38);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    section.header_info > img {
+        width: 100%;
+    }
+
+    section.header_info > h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 24px;
+    }
+
+    /* header navigatie styles */
+    nav.header_navigatie {
+        display: flex;
+        font-family: "Bevan", open-sans;
+        background-color: rgb(239, 51, 64);
+        margin-right: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav.header_navigatie > a {
+        font-size: 24px;
+        text-decoration: none;
+        
+        padding: 1vh 1vw;
+    }
+
+    nav.header_navigatie > a:link, a:visited, a:active {
+        color: whitesmoke;
+    }
+
+    nav.header_navigatie > a:hover {
+        color: black;
+    }
+
+    #toggle_navigatie {
+        font-size: 4rem;
+    }
+
+    #toggle_navigatie + label {
+        display: block;
+    }
+
+    #toggle_navigatie ~ nav.header_navigatie {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #toggle_navigatie:checked ~ nav.header_navigatie {
+        max-height: 100vh;
+        opacity: 1;
+    }
+
+    #toggle_navigatie {
+        display: none;
+    }
+
+    /* footer styles */
+    footer {
+        background-color: rgb(207, 50, 38);
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.footer_main > h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    section.footer_main > p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    section.footer_main > p > a {
+        text-decoration: none;
+        margin-right: 5px;
+    }
+
+    #email_footer {
+        color: rgb(199, 199, 199);
+    }
+
+    #copyright_footer {
+        color: rgb(255, 240, 192);
+    }
+
+    /* home styles */
+    section.home_slideshow > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.home_text {
+        display: flex;
+        margin: 50px;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    section.home_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+    }
+
+    section.home_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    /* gallerij styles */
+    section.gallerij_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.gallerij_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.gallerij_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.gallerij_afbeeldingen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.gallerij_afbeelding {
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        justify-content: space-between;
+    }
+
+    section.gallerij_afbeelding img {
+        width: 85%;
+        margin: 10px;
+    }
+
+    /* menu styles */
+    section.menu_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.menu_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.menu_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.menu_gerechten {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.menu_gerecht {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    section.menu_gerecht h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.menu_gerecht p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
+
+    /* over ons styles */
+    section.over_ons_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.over_ons_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.over_ons_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.over_ons_section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    section.over_ons_section_tekst {
+        margin-left: 10px;
+        flex: 1;
+        background-color: #f0f0f0;
+    }
+
+    section.over_ons_section_tekst h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 38px;
+    }
+    
+    section.over_ons_section_tekst p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+    }
+
+    .over_ons_section_img {
+        display: flex;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    section.over_ons_text_alineas {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+    }
+
+    section.over_ons_text_alineas h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 18px;
+    }
+
+    section.over_ons_text_alineas p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    section.over_ons_video {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.over_ons_video h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 48px;
+    }
+
+    /* reserveer styles */
+    section.avg_main {
+        justify-content: center;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 42px;
+        color: rgb(207, 50, 38);
+    }
+
+    section.avg_content {
+        color: black;
+        background-color: #f0f0f0;
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    section.avg_main section.avg_content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    #toggle_avg:checked ~ section.avg_content {
+        max-height: 500vh;
+        opacity: 1;
+    }
+
+    #toggle_avg {
+        display: none;
+    }
+
+    /* form styles */
+    form.formulier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 25px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+    }
+
+    form.formulier h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 32px;
+    }
+
+    form.formulier p {
+        font-family: "Inter", sans-serif;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    form.formulier label {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    form.formulier input[type="text"], form.formulier input[type="email"],  form.formulier input[type="date"], form.formulier input[type="tel"], form.formulier input[type="number"], form.formulier select, form.formulier textarea  {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    form.formulier input[type="submit"] {
+        background-color:  rgb(207, 50, 38);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    form.formulier input[type="submit"]:hover {
+        background-color:  rgb(239, 51, 64);
+    }
+}
