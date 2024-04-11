@@ -23,18 +23,18 @@
         <?php
             $reviews = array(
                 array(
-                    "naam" => "Naam",
-                    "beschrijving" => "Beschrijving",
+                    "naam" => "John",
+                    "beschrijving" => "Geweldige ervaring! Het eten was heerlijk en de service was uitstekend. Ik raad de Tandoori Kip ten zeerste aan.",
                     "rating" => "5"
-                ),
+                    ),
                 array(
-                    "naam" => "Naam",
-                    "beschrijving" => "Beschrijving",
+                    "naam" => "Lisa",
+                    "beschrijving" => "Heerlijk eten en een gezellige sfeer. De Butter Chicken was absoluut verrukkelijk. Ik kom zeker terug!",
                     "rating" => "4"
                 ),
-                array(
-                    "naam" => "Naam",
-                    "beschrijving" => "Beschrijving",
+                    array(
+                    "naam" => "David",
+                    "beschrijving" => "Goed eten, maar de service kan beter. De Prawn Biryani was smaakvol, maar de wachttijd was een beetje lang.",
                     "rating" => "3"
                 )
             );
@@ -50,7 +50,7 @@
 
                 // Loop door maximale sterren die we kunnen hebben.
                 for ($i = 1; $i <= $totaalSterren; $i++) {
-                    // Als we onder de rating zijn (dus rating = 3, dan is tot 3 dit true), vullen we een ingevulde ster doe.
+                    // Als we onder de rating zijn (dus rating = 3, dan is tot en met 3 dit true), vullen we een ingevulde ster doe.
                     if ($i <= $rating) {
                         $return .= $ingevuldeSter;
 
@@ -69,10 +69,13 @@
 
             // Loop door elke review.
             foreach ($reviews as $review) {
+                echo '<section class="geplaatste_review_container">';
+
                 echo '<section class="geplaatste_review">';
                 echo '<h1>' . $review['naam'] . '</h1>';
                 echo '<p>' . $review['beschrijving'] . '</p>';
                 echo '<p>Rating: ' . genereerSterRating($review['rating'], $MAXIMALE_RATING) . '</p>';
+               
                 echo '</section>';
             }
 
