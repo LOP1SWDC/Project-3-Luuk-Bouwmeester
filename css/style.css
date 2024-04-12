@@ -505,6 +505,44 @@
         font-size: 14px;
         text-align: center;
     }
+
+
+    /* vacatures styles */
+    section.vacature_image {
+        position: relative;
+        width: 100%;
+    }
+    
+    section.vacature_image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    section.text_overlay {
+        position: absolute;
+        top: 50%;
+        left: 200px;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        color: white;
+        z-index: 1;
+        width: 600px; 
+        max-height: 80%; 
+        overflow-y: auto;
+    }
+
+    section.text_overlay h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    section.text_overlay p {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 }
 
 /* style voor onder 480px (mobile) */
