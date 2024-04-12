@@ -461,6 +461,44 @@
         font-family: "Inter", sans-serif;
         font-size: 14px;
     }
+
+     /* arrangements styles */
+     section.arrangements_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.arrangements_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.arrangements_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.arrangement_single {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 10px;
+        max-width: 600px;
+        background-color: #f0f0f0;
+    }
+    
+    section.arrangement_single h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    section.arrangement_single p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
 }
 
 /* style voor onder 480px (mobile) */
