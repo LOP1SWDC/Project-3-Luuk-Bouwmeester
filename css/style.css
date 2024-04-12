@@ -869,4 +869,82 @@
         font-family: "Inter", sans-serif;
         font-size: 14px;
     }
+
+     /* dranken styles */
+     section.dranken_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.dranken_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 48px;
+    }
+
+    section.dranken_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.dranken_containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.drank_single {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+
+    section.drank_single h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    section.drank_single p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    section.drank_single > img {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    section.dranken_secondary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section.dranken_secondary > img {
+        width: 100%;
+    }
+
+    section.dranken_secondary_text {
+        padding-top: 20px;
+    }
+
+    section.dranken_secondary_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.dranken_secondary_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
 }
