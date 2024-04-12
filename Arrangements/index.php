@@ -41,6 +41,10 @@
             </section>
         </section>
 
+        <section class="arrangements_text">
+            <h1>Ook hebben wij wat combos!</h1>
+        </section>
+        
         <section class="arrangement_single">
             <h1>Tandoori Feast Combo</h1>
             <br>
