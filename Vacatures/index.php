@@ -26,6 +26,50 @@
             </section>
         </section>
 
+        <section class="vacatures_text">
+            <section class="vacature">
+                <h1>Souschef</h1>
+                <p>We zijn op zoek naar een ervaren souschef om ons keukenteam te versterken. Als souschef ben je verantwoordelijk voor het assisteren van de chef-kok bij het beheren van de keuken, het ontwikkelen van nieuwe gerechten en het handhaven van de kwaliteitsnormen. We zoeken een creatieve en gepassioneerde persoon met sterke leiderschapsvaardigheden en een passie voor hoogwaardige gastronomie.</p>
+                <br>
+                <p>Vereisten:
+                    <ul>
+                        <li>Minimaal 3 jaar ervaring in een vergelijkbare functie</li>
+                        <li>Aantoonbare ervaring met het leiden van een team</li>
+                        <li>Uitstekende kennis van voedselveiligheids- en hygiënenormen</li>
+                        <li>Flexibel werkschema, inclusief weekenden en feestdagen</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="vacature">
+                <h1>Bedieningsmedewerker</h1>
+                <p>We zijn op zoek naar enthousiaste bedieningsmedewerkers om ons team in de bediening te versterken. Als bedieningsmedewerker ben je verantwoordelijk voor het verwelkomen van gasten, het opnemen van bestellingen, het serveren van gerechten en drankjes, en het bieden van uitstekende klantenservice. We zoeken vriendelijke en gemotiveerde individuen die graag in een dynamische omgeving werken.</p>
+                <br>
+                <p>Vereisten:
+                    <ul>
+                        <li>Goede communicatieve vaardigheden</li>
+                        <li>Teamspeler met een positieve houding</li>
+                        <li>Beschikbaarheid voor avond- en weekenddiensten</li>
+                        <li>Ervaring in de horeca is een pluspunt, maar geen vereiste</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section class="vacature">
+                <h1>Keukenhulp</h1>
+                <p>We zijn op zoek naar een keukenhulp om ons keukenteam te ondersteunen. Als keukenhulp ben je verantwoordelijk voor het assisteren van de chef-kok en souschef bij de voorbereiding van ingrediënten, het schoonmaken van keukenapparatuur en het handhaven van een schone en georganiseerde werkruimte. We zoeken een hardwerkende en betrouwbare persoon die bereid is om te leren en te groeien in een professionele keukenomgeving.</p>
+                <br>
+                <p>Vereisten:
+                    <ul>
+                        <li>Enige ervaring in een keukenomgeving is een pluspunt</li>
+                        <li>Bereidheid om te leren en taken uit te voeren zoals toegewezen</li>
+                        <li>Goede fysieke conditie en het vermogen om te multitasken</li>
+                        <li>Flexibel werkschema, inclusief avonden en weekenden</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+
     </main>
 
     <?php include "../php_shared/footer.php"; ?>

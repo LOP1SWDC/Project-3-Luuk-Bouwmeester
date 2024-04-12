@@ -543,6 +543,34 @@
         font-size: 20px;
         margin-bottom: 10px;
     }
+    section.vacatures_text {
+        display: grid;
+        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    section.vacature {
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    section.vacature h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 24px;
+    }
+    
+    section.vacature p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+    }
+    
+    section.vacature li {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        margin-left: 30px;
+    }
 }
 
 /* style voor onder 480px (mobile) */
