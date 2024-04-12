@@ -13,5 +13,6 @@
         <a href="../Gallerij/index.php">Gallerij</a>
         <a href="../Reserveer/index.php">Reserveer</a>
         <a href="../Reviews/index.php">Reviews</a>
+        <a href="../Dranken/index.php">Dranken</a>
     </nav>
 </header>
