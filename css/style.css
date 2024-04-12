@@ -344,6 +344,46 @@
     form.formulier input[type="submit"]:hover {
         background-color:  rgb(239, 51, 64);
     }
+
+    /* review styles */
+    section.review_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.review_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.review_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.geplaatste_review_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.geplaatste_review {
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 25px;
+    }
+    
+    section.geplaatste_review h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.geplaatste_review p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
 }
 
 /* style voor onder 480px (mobile) */
@@ -711,5 +751,45 @@
 
     form.formulier input[type="submit"]:hover {
         background-color:  rgb(239, 51, 64);
+    }
+
+    /* review styles */
+    section.review_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section.review_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 58px;
+    }
+
+    section.review_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    section.geplaatste_review_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.geplaatste_review {
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 25px;
+    }
+    
+    section.geplaatste_review h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.geplaatste_review p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
     }
 }
