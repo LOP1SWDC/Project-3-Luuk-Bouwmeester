@@ -434,6 +434,33 @@
         display: block;
         margin: 0 auto;
     }
+
+    section.dranken_secondary {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    section.dranken_secondary > img {
+        width: 25%;
+    }
+
+    section.dranken_secondary_text {
+        padding-left: 50px;
+    }
+
+    section.dranken_secondary_text h1 {
+        font-family: "Bevan", sans-serif;
+        font-size: 28px;
+    }
+
+    section.dranken_secondary_text p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+    }
 }
 
 /* style voor onder 480px (mobile) */
