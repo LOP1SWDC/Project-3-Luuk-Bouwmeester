@@ -15,5 +15,6 @@
         <a href="../Reviews/index.php">Reviews</a>
         <a href="../Dranken/index.php">Dranken</a>
         <a href="../Arrangements/index.php">Arrangements</a>
+        <a href="../Vacatures/index.php">Vacatures</a>
     </nav>
 </header>
