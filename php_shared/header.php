@@ -12,6 +12,6 @@
         <a href="../Over ons/index.php">Over ons</a>
         <a href="../Gallerij/index.php">Gallerij</a>
         <a href="../Reserveer/index.php">Reserveer</a>
-        <a href="../Review/index.php">Review</a>
+        <a href="../Reviews/index.php">Reviews</a>
     </nav>
 </header>
