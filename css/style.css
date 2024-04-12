@@ -479,6 +479,12 @@
         margin-bottom: 5px;
     }
 
+    section.arrangements_first {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
     section.arrangement_single {
         display: flex;
         flex-direction: column;

@@ -15,10 +15,30 @@
     <?php include "../php_shared/header.php"; ?>
 
     <main>
-        
+
         <section class="arrangements_text">
             <h1>Op zoek naar een arrangement?</h1>
             <p>Deze vindt je hier!</p>
+        </section>
+
+        <section class="arrangements_first">
+            <section class="arrangement_single">
+                <h1>Shared Dining</h1>
+                <p>Een heerlijke selectie van gerechten om te delen met vrienden en familie.</p>
+                <p>Prijs: $39,99 per persoon</p>
+            </section>
+
+            <section class="arrangement_single">
+                <h1>3 Gangenmenu inclusief drankjes</h1>
+                <p>Een culinaire ervaring bestaande uit een voorgerecht, hoofdgerecht, dessert en drankjes.</p>
+                <p>Prijs: $59,99 per persoon</p>
+            </section>
+
+            <section class="arrangement_single">
+                <h1>Arrangement voor groepen/families</h1>
+                <p>Een uitgebreid assortiment van gerechten geschikt voor grote groepen en families.</p>
+                <p>Prijs: Op aanvraag</p>
+            </section>
         </section>
 
         <section class="arrangement_single">
